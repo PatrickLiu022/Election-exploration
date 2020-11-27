@@ -14,7 +14,8 @@ num_timestamps <- length(unique(raw_data$timestamp))
 # Number of time stamps varies for each state
 timestamps_by_state <- raw_data %>% 
   group_by(state) %>% 
-  count()
+  count() %>% 
+  arrange(-n)
 
 # Important asDate function: 
 # If date is in this format: 11/23/2020
