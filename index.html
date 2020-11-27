@@ -248,6 +248,230 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
+<script>$(document).ready(function(){
+    if (typeof $('[data-toggle="tooltip"]').tooltip === 'function') {
+        $('[data-toggle="tooltip"]').tooltip();
+    }
+    if ($('[data-toggle="popover"]').popover === 'function') {
+        $('[data-toggle="popover"]').popover();
+    }
+});
+</script>
+<style type="text/css">
+.lightable-minimal {
+border-collapse: separate;
+border-spacing: 16px 1px;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-minimal td {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal th {
+margin-left: 5px;
+margin-right: 5px;
+}
+.lightable-minimal thead tr:last-child th {
+border-bottom: 2px solid #00000050;
+empty-cells: hide;
+}
+.lightable-minimal tbody tr:first-child td {
+padding-top: 0.5em;
+}
+.lightable-minimal.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-minimal.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic {
+border-top: 0.16em solid #111111;
+border-bottom: 0.16em solid #111111;
+width: 100%;
+margin-bottom: 10px;
+margin: 10px 5px;
+}
+.lightable-classic tfoot tr td {
+border: 0;
+}
+.lightable-classic tfoot tr:first-child td {
+border-top: 0.14em solid #111111;
+}
+.lightable-classic caption {
+color: #222222;
+}
+.lightable-classic td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic thead tr:last-child th {
+border-bottom: 0.10em solid #111111;
+}
+.lightable-classic.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-classic-2 {
+border-top: 3px double #111111;
+border-bottom: 3px double #111111;
+width: 100%;
+margin-bottom: 10px;
+}
+.lightable-classic-2 tfoot tr td {
+border: 0;
+}
+.lightable-classic-2 tfoot tr:first-child td {
+border-top: 3px double #111111;
+}
+.lightable-classic-2 caption {
+color: #222222;
+}
+.lightable-classic-2 td {
+padding-left: 5px;
+padding-right: 5px;
+color: #222222;
+}
+.lightable-classic-2 th {
+padding-left: 5px;
+padding-right: 5px;
+font-weight: normal;
+color: #222222;
+}
+.lightable-classic-2 tbody tr:last-child td {
+border-bottom: 3px double #111111;
+}
+.lightable-classic-2 thead tr:last-child th {
+border-bottom: 1px solid #111111;
+}
+.lightable-classic-2.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-classic-2.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #EEE;
+border-collapse: collapse;
+margin-bottom: 10px;
+}
+.lightable-material tfoot tr td {
+border: 0;
+}
+.lightable-material tfoot tr:first-child td {
+border-top: 1px solid #EEE;
+}
+.lightable-material th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+}
+.lightable-material td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+border-top: 1px solid #eeeeee;
+}
+.lightable-material.lightable-hover tbody tr:hover {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody tr:nth-child(even) {
+background-color: #f5f5f5;
+}
+.lightable-material.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #ddd;
+}
+.lightable-material-dark {
+min-width: 100%;
+white-space: nowrap;
+table-layout: fixed;
+font-family: Roboto, sans-serif;
+border: 1px solid #FFFFFF12;
+border-collapse: collapse;
+margin-bottom: 10px;
+background-color: #363640;
+}
+.lightable-material-dark tfoot tr td {
+border: 0;
+}
+.lightable-material-dark tfoot tr:first-child td {
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark th {
+height: 56px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF60;
+}
+.lightable-material-dark td {
+height: 52px;
+padding-left: 16px;
+padding-right: 16px;
+color: #FFFFFF;
+border-top: 1px solid #FFFFFF12;
+}
+.lightable-material-dark.lightable-hover tbody tr:hover {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody tr:nth-child(even) {
+background-color: #FFFFFF12;
+}
+.lightable-material-dark.lightable-striped tbody td {
+border: 0;
+}
+.lightable-material-dark.lightable-striped thead tr:last-child th {
+border-bottom: 1px solid #FFFFFF12;
+}
+.lightable-paper {
+width: 100%;
+margin-bottom: 10px;
+color: #444;
+}
+.lightable-paper tfoot tr td {
+border: 0;
+}
+.lightable-paper tfoot tr:first-child td {
+border-top: 1px solid #00000020;
+}
+.lightable-paper thead tr:last-child th {
+color: #666;
+vertical-align: bottom;
+border-bottom: 1px solid #00000020;
+line-height: 1.15em;
+padding: 10px 5px;
+}
+.lightable-paper td {
+vertical-align: middle;
+border-bottom: 1px solid #00000010;
+line-height: 1.15em;
+padding: 7px 5px;
+}
+.lightable-paper.lightable-hover tbody tr:hover {
+background-color: #F9EEC1;
+}
+.lightable-paper.lightable-striped tbody tr:nth-child(even) {
+background-color: #00000008;
+}
+.lightable-paper.lightable-striped tbody td {
+border: 0;
+}
+</style>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -420,218 +644,427 @@ summary {
 
 <p>This data comes from <a href="https://github.com/alex/nyt-2020-election-scraper">this repo</a> and shows the candidate leads over time. Biden took the lead in Georgia at 2020-11-06 09:50:07.414000.</p>
 <p>Here is the number of timestamps for each state in the dataset</p>
-<pre class="r"><code>knitr::kable(timestamps_by_state, col.names = c(&quot;State&quot;, &quot;Number of Timestamps&quot;))</code></pre>
-<table>
+<pre class="r"><code>knitr::kable(timestamps_by_state, col.names = c(&quot;State&quot;, &quot;Number of Timestamps&quot;), &quot;html&quot;) %&gt;% 
+  kable_styling(full_width = F)</code></pre>
+<table class="table" style="width: auto !important; margin-left: auto; margin-right: auto;">
 <thead>
-<tr class="header">
-<th align="left">State</th>
-<th align="right">Number of Timestamps</th>
+<tr>
+<th style="text-align:left;">
+State
+</th>
+<th style="text-align:right;">
+Number of Timestamps
+</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
-<td align="left">Alabama (EV: 9)</td>
-<td align="right">12</td>
+<tr>
+<td style="text-align:left;">
+Pennsylvania (EV: 20)
+</td>
+<td style="text-align:right;">
+326
+</td>
 </tr>
-<tr class="even">
-<td align="left">Alaska (EV: 3)</td>
-<td align="right">19</td>
+<tr>
+<td style="text-align:left;">
+Georgia (EV: 16)
+</td>
+<td style="text-align:right;">
+224
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Arizona (EV: 11)</td>
-<td align="right">85</td>
+<tr>
+<td style="text-align:left;">
+Minnesota (EV: 10)
+</td>
+<td style="text-align:right;">
+187
+</td>
 </tr>
-<tr class="even">
-<td align="left">Arkansas (EV: 6)</td>
-<td align="right">84</td>
+<tr>
+<td style="text-align:left;">
+Washington (EV: 12)
+</td>
+<td style="text-align:right;">
+148
+</td>
 </tr>
-<tr class="odd">
-<td align="left">California (EV: 55)</td>
-<td align="right">123</td>
+<tr>
+<td style="text-align:left;">
+New Jersey (EV: 14)
+</td>
+<td style="text-align:right;">
+141
+</td>
 </tr>
-<tr class="even">
-<td align="left">Colorado (EV: 9)</td>
-<td align="right">71</td>
+<tr>
+<td style="text-align:left;">
+Connecticut (EV: 7)
+</td>
+<td style="text-align:right;">
+126
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Connecticut (EV: 7)</td>
-<td align="right">126</td>
+<tr>
+<td style="text-align:left;">
+California (EV: 55)
+</td>
+<td style="text-align:right;">
+123
+</td>
 </tr>
-<tr class="even">
-<td align="left">Delaware (EV: 3)</td>
-<td align="right">6</td>
+<tr>
+<td style="text-align:left;">
+Massachusetts (EV: 11)
+</td>
+<td style="text-align:right;">
+123
+</td>
 </tr>
-<tr class="odd">
-<td align="left">District of Columbia (EV: 3)</td>
-<td align="right">10</td>
+<tr>
+<td style="text-align:left;">
+Virginia (EV: 13)
+</td>
+<td style="text-align:right;">
+106
+</td>
 </tr>
-<tr class="even">
-<td align="left">Florida (EV: 29)</td>
-<td align="right">49</td>
+<tr>
+<td style="text-align:left;">
+Maryland (EV: 10)
+</td>
+<td style="text-align:right;">
+97
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Georgia (EV: 16)</td>
-<td align="right">224</td>
+<tr>
+<td style="text-align:left;">
+Kansas (EV: 6)
+</td>
+<td style="text-align:right;">
+91
+</td>
 </tr>
-<tr class="even">
-<td align="left">Hawaii (EV: 4)</td>
-<td align="right">4</td>
+<tr>
+<td style="text-align:left;">
+Maine (EV: 4)
+</td>
+<td style="text-align:right;">
+91
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Idaho (EV: 4)</td>
-<td align="right">7</td>
+<tr>
+<td style="text-align:left;">
+Arizona (EV: 11)
+</td>
+<td style="text-align:right;">
+85
+</td>
 </tr>
-<tr class="even">
-<td align="left">Illinois (EV: 20)</td>
-<td align="right">58</td>
+<tr>
+<td style="text-align:left;">
+Arkansas (EV: 6)
+</td>
+<td style="text-align:right;">
+84
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Indiana (EV: 11)</td>
-<td align="right">49</td>
+<tr>
+<td style="text-align:left;">
+Iowa (EV: 6)
+</td>
+<td style="text-align:right;">
+73
+</td>
 </tr>
-<tr class="even">
-<td align="left">Iowa (EV: 6)</td>
-<td align="right">73</td>
+<tr>
+<td style="text-align:left;">
+Michigan (EV: 16)
+</td>
+<td style="text-align:right;">
+72
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Kansas (EV: 6)</td>
-<td align="right">91</td>
+<tr>
+<td style="text-align:left;">
+Colorado (EV: 9)
+</td>
+<td style="text-align:right;">
+71
+</td>
 </tr>
-<tr class="even">
-<td align="left">Kentucky (EV: 8)</td>
-<td align="right">57</td>
+<tr>
+<td style="text-align:left;">
+New York (EV: 29)
+</td>
+<td style="text-align:right;">
+66
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Louisiana (EV: 8)</td>
-<td align="right">14</td>
+<tr>
+<td style="text-align:left;">
+New Hampshire (EV: 4)
+</td>
+<td style="text-align:right;">
+65
+</td>
 </tr>
-<tr class="even">
-<td align="left">Maine (EV: 4)</td>
-<td align="right">91</td>
+<tr>
+<td style="text-align:left;">
+North Carolina (EV: 15)
+</td>
+<td style="text-align:right;">
+65
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Maryland (EV: 10)</td>
-<td align="right">97</td>
+<tr>
+<td style="text-align:left;">
+South Carolina (EV: 9)
+</td>
+<td style="text-align:right;">
+64
+</td>
 </tr>
-<tr class="even">
-<td align="left">Massachusetts (EV: 11)</td>
-<td align="right">123</td>
+<tr>
+<td style="text-align:left;">
+Mississippi (EV: 6)
+</td>
+<td style="text-align:right;">
+60
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Michigan (EV: 16)</td>
-<td align="right">72</td>
+<tr>
+<td style="text-align:left;">
+Illinois (EV: 20)
+</td>
+<td style="text-align:right;">
+58
+</td>
 </tr>
-<tr class="even">
-<td align="left">Minnesota (EV: 10)</td>
-<td align="right">187</td>
+<tr>
+<td style="text-align:left;">
+Kentucky (EV: 8)
+</td>
+<td style="text-align:right;">
+57
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Mississippi (EV: 6)</td>
-<td align="right">60</td>
+<tr>
+<td style="text-align:left;">
+Utah (EV: 6)
+</td>
+<td style="text-align:right;">
+54
+</td>
 </tr>
-<tr class="even">
-<td align="left">Missouri (EV: 10)</td>
-<td align="right">10</td>
+<tr>
+<td style="text-align:left;">
+Florida (EV: 29)
+</td>
+<td style="text-align:right;">
+49
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Montana (EV: 3)</td>
-<td align="right">20</td>
+<tr>
+<td style="text-align:left;">
+Indiana (EV: 11)
+</td>
+<td style="text-align:right;">
+49
+</td>
 </tr>
-<tr class="even">
-<td align="left">Nebraska (EV: 5)</td>
-<td align="right">22</td>
+<tr>
+<td style="text-align:left;">
+Texas (EV: 38)
+</td>
+<td style="text-align:right;">
+49
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Nevada (EV: 6)</td>
-<td align="right">38</td>
+<tr>
+<td style="text-align:left;">
+South Dakota (EV: 3)
+</td>
+<td style="text-align:right;">
+42
+</td>
 </tr>
-<tr class="even">
-<td align="left">New Hampshire (EV: 4)</td>
-<td align="right">65</td>
+<tr>
+<td style="text-align:left;">
+Ohio (EV: 18)
+</td>
+<td style="text-align:right;">
+39
+</td>
 </tr>
-<tr class="odd">
-<td align="left">New Jersey (EV: 14)</td>
-<td align="right">141</td>
+<tr>
+<td style="text-align:left;">
+Nevada (EV: 6)
+</td>
+<td style="text-align:right;">
+38
+</td>
 </tr>
-<tr class="even">
-<td align="left">New Mexico (EV: 5)</td>
-<td align="right">25</td>
+<tr>
+<td style="text-align:left;">
+North Dakota (EV: 3)
+</td>
+<td style="text-align:right;">
+37
+</td>
 </tr>
-<tr class="odd">
-<td align="left">New York (EV: 29)</td>
-<td align="right">66</td>
+<tr>
+<td style="text-align:left;">
+Oregon (EV: 7)
+</td>
+<td style="text-align:right;">
+32
+</td>
 </tr>
-<tr class="even">
-<td align="left">North Carolina (EV: 15)</td>
-<td align="right">65</td>
+<tr>
+<td style="text-align:left;">
+Vermont (EV: 3)
+</td>
+<td style="text-align:right;">
+30
+</td>
 </tr>
-<tr class="odd">
-<td align="left">North Dakota (EV: 3)</td>
-<td align="right">37</td>
+<tr>
+<td style="text-align:left;">
+West Virginia (EV: 5)
+</td>
+<td style="text-align:right;">
+29
+</td>
 </tr>
-<tr class="even">
-<td align="left">Ohio (EV: 18)</td>
-<td align="right">39</td>
+<tr>
+<td style="text-align:left;">
+Wisconsin (EV: 10)
+</td>
+<td style="text-align:right;">
+26
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Oklahoma (EV: 7)</td>
-<td align="right">5</td>
+<tr>
+<td style="text-align:left;">
+New Mexico (EV: 5)
+</td>
+<td style="text-align:right;">
+25
+</td>
 </tr>
-<tr class="even">
-<td align="left">Oregon (EV: 7)</td>
-<td align="right">32</td>
+<tr>
+<td style="text-align:left;">
+Nebraska (EV: 5)
+</td>
+<td style="text-align:right;">
+22
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Pennsylvania (EV: 20)</td>
-<td align="right">326</td>
+<tr>
+<td style="text-align:left;">
+Montana (EV: 3)
+</td>
+<td style="text-align:right;">
+20
+</td>
 </tr>
-<tr class="even">
-<td align="left">Rhode Island (EV: 4)</td>
-<td align="right">11</td>
+<tr>
+<td style="text-align:left;">
+Alaska (EV: 3)
+</td>
+<td style="text-align:right;">
+19
+</td>
 </tr>
-<tr class="odd">
-<td align="left">South Carolina (EV: 9)</td>
-<td align="right">64</td>
+<tr>
+<td style="text-align:left;">
+Louisiana (EV: 8)
+</td>
+<td style="text-align:right;">
+14
+</td>
 </tr>
-<tr class="even">
-<td align="left">South Dakota (EV: 3)</td>
-<td align="right">42</td>
+<tr>
+<td style="text-align:left;">
+Alabama (EV: 9)
+</td>
+<td style="text-align:right;">
+12
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Tennessee (EV: 11)</td>
-<td align="right">3</td>
+<tr>
+<td style="text-align:left;">
+Rhode Island (EV: 4)
+</td>
+<td style="text-align:right;">
+11
+</td>
 </tr>
-<tr class="even">
-<td align="left">Texas (EV: 38)</td>
-<td align="right">49</td>
+<tr>
+<td style="text-align:left;">
+District of Columbia (EV: 3)
+</td>
+<td style="text-align:right;">
+10
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Utah (EV: 6)</td>
-<td align="right">54</td>
+<tr>
+<td style="text-align:left;">
+Missouri (EV: 10)
+</td>
+<td style="text-align:right;">
+10
+</td>
 </tr>
-<tr class="even">
-<td align="left">Vermont (EV: 3)</td>
-<td align="right">30</td>
+<tr>
+<td style="text-align:left;">
+Idaho (EV: 4)
+</td>
+<td style="text-align:right;">
+7
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Virginia (EV: 13)</td>
-<td align="right">106</td>
+<tr>
+<td style="text-align:left;">
+Delaware (EV: 3)
+</td>
+<td style="text-align:right;">
+6
+</td>
 </tr>
-<tr class="even">
-<td align="left">Washington (EV: 12)</td>
-<td align="right">148</td>
+<tr>
+<td style="text-align:left;">
+Oklahoma (EV: 7)
+</td>
+<td style="text-align:right;">
+5
+</td>
 </tr>
-<tr class="odd">
-<td align="left">West Virginia (EV: 5)</td>
-<td align="right">29</td>
+<tr>
+<td style="text-align:left;">
+Wyoming (EV: 3)
+</td>
+<td style="text-align:right;">
+5
+</td>
 </tr>
-<tr class="even">
-<td align="left">Wisconsin (EV: 10)</td>
-<td align="right">26</td>
+<tr>
+<td style="text-align:left;">
+Hawaii (EV: 4)
+</td>
+<td style="text-align:right;">
+4
+</td>
 </tr>
-<tr class="odd">
-<td align="left">Wyoming (EV: 3)</td>
-<td align="right">5</td>
+<tr>
+<td style="text-align:left;">
+Tennessee (EV: 11)
+</td>
+<td style="text-align:right;">
+3
+</td>
 </tr>
 </tbody>
 </table>
