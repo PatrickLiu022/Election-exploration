@@ -16,6 +16,11 @@ timestamps_by_state <- raw_data %>%
   group_by(state) %>% 
   count()
 
+# Important asDate function: 
+# If date is in this format: 11/23/2020
+# You can change it to readable form by passing the data like this:
+# as.Date("11/23/2020", format = "%m/%d/%Y")
+
 # Formatting: split out state name from electoral votes
 data <- raw_data %>% 
   separate(state, into = c("state", "ev"), " \\(") %>% 
@@ -26,7 +31,11 @@ data <- raw_data %>%
 
 # When did Biden take the lead in Georgia
 ga_lead_time <- data %>% 
-  filter(state == "Georgia (EV: 16)", leading_candidate == "Biden")
+  filter(state == "Georgia", leading_candidate_name == "Biden") %>% 
+  filter(timestamp == min(timestamp)) %>% 
+  pull(timestamp)
+  
+  
 
 # What is the difference in votes in each state
 
